@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 9 Countdown</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+
+        <!--Count down-->
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="Seconds" value="" />
+        <button onclick="count_Down()">
+            Click here!
+        </button>
+        <p id="Timer"></p>
+
+        <!--SLIDE SHOW CONTAINER-->
+        <div class="slideshow-container">
+
+            <!--Full-width image with slide reference and caption/text for images-->
+            <div class="mySlides fade">
+                <div class="mainTxt">1 / 3</div>
+                <img src="./images/car1.jpg" style="width:100%">
+                <div class="Text">
+                    Here is the legendary 1967 Shelby AC Cobra 427! Beautiful car,
+                    kind of pricy though.
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="mainTxt">2 / 3</div>
+                <img src="./images/car2.jpg" style="width:100%">
+                <div class="Text">
+                    If you are unable to pick up an AC Cobra for $1.2 million, 
+                    here is your next option!
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="mainTxt">3 / 3</div>
+                <img src="./images/car3.jpg" style="width:100%">
+                <div class="Text">
+                    If your looking for an all around American Muscle legend,
+                    the SS will not dissapoint.
+                </div>
+            </div>
+
+            <!--BUTTONS (NEXT/PREVIOUS)-->
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <!--Dots / Circles-->
+        <div style="text-align:center">
+            <span class="Dot" onclick="currentSlide(1)"></span>
+            <span class="Dot" onclick="currentSlide(2)"></span>
+            <span class="Dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </body>
+</html>
