@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Arrow Function Challenge</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <p onclick="myFunction()" id="displaycar">click here!</p>
+
+        <script>
+            function myFunction() {
+            var car;
+            car = (val) => "These are my favorite car brands: " + val;
+            document.getElementById("displaycar").innerHTML = car ("Honda, Ford, and Nissan");
+            }
+        </script>
+
+
+
+    </body>
+</html>
