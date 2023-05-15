@@ -78,13 +78,13 @@ function Calculator_Reset() {
 //This function updates the calculator screen with the content of Display_Value.
 function Update_Display() {
     //Make use of the calculator-screen CLASS to target the input tag in the HTML document.
-    const display = document.querySelector(".calculator-screen");
+    const display = document.querySelector('.calculator-screen');
     display.value = Calculator.Display_Value;
 }
 
 Update_Display();
 //This section monitors button clicks
-const keys = document.querySelector(".calculator-keys");
+const keys = document.querySelector('.calculator-keys');
 keys.addEventListener("click", (event) => {
     //The target variable is an object that represents the element that was clicked.
     const { target } = event;
