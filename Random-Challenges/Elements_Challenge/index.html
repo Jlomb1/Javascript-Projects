@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Elements Challenge (DOM)</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+
+        <p>You can click anywhere in the doc to display the hidden message!</p>
+
+        <p id="demo"></p>
+
+
+        <script>
+            document.addEventListener("click", myFunction);
+
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Hello, Here is an example of \'properites and methods\'"
+            }
+        </script>
+
+
+    </body>
+</html>
