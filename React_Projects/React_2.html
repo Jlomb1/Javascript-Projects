@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>React Assignment</title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    </head>
+
+    <body>
+
+        <div id="like_button_container"></div>
+
+
+        <script>
+            
+            const X = React.createElement;
+
+            class likeButton extends React.Component {
+                constructor(props) { //A constructor creates an object within a class
+                    super(props); //“Props” is short for properties and “Super” calls a constructor
+                    this.state = { liked: false }; //“setstate” schedules a UI update
+                }
+
+                render() {
+                    if (this.state.liked) {
+                        return 'You clicked the like button!';
+                    }
+
+                    return X (
+                        'button',
+                        { onClick: () => this.setState({ liked: true }) },
+                        'like'
+                    );
+                }
+            }
+
+            const domContainer = document.querySelector('#like_button_container');
+            ReactDOM.render(X(likeButton), domContainer);
+
+        </script>
+
+
+
+
+    </body>
+</html>
